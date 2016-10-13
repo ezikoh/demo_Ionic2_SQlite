@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Ionic SqlStorage
+        </ion-title>
+        <button ion-button (click)="refresh()">Refresh</button>
+        <button ion-button (click)="add()">Add</button>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let person of people">
+            {{person.firstname}} {{person.lastname}}
+        </ion-item>
+    </ion-list>
+</ion-content>
